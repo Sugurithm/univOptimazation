@@ -94,7 +94,7 @@ void sortSavings() {
 }
 
 // セービング順に経路を結合
-void merge_routes() {
+void mergeRoutes() {
     sortSavings(); // セービング値を降順にソート
 
     // 節約量を基に新しいルートを検討
@@ -158,7 +158,7 @@ void merge_routes() {
 }
 
 // 結果の出力（ルートと総コスト）
-void print_result() {
+void showResult() {
     int total_cost = 0;
     printf("配送ルート:\n");
     for (int r = 0; r < route_count; r++) {
@@ -215,14 +215,14 @@ int main() {
     initialize();
 
     // 処理前を出力
-    print_result();
+    showResult();
 
     // セービング法
     calculate_savings(); 
-    merge_routes();
+    mergeRoutes();
 
     // 処理後を出力
-    print_result();
+    showResult();
 
     return 0;
 }
