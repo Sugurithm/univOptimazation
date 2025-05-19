@@ -62,10 +62,7 @@ void twoOpt(int route[], double distances[][MAX_CITIES], int n) {
                     break;
                 }
             }
-            // 改善がなければループを抜ける
-            if (flag) {
-                break;
-            }
+            if (flag) break;
         }
     }
 }

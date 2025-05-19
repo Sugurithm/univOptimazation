@@ -15,7 +15,7 @@ void swap(Item *a, Item *b) {
     *b = temp;
 }
 
-// ボブルソート サイズあたりの価値の高い順に並べ替え
+// バブルソート サイズあたりの価値の高い順に並べ替え
 void bubbleSort(Item items[], int n) {
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
